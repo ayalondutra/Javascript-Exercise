@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Calculadora do Windows</title>
+</head>
+<body>
+  
+  <div class="calculator">
+    <div>
+      <input type="text" id="display" class="display" readonly>
+    </div>
+
+    <button class="button" onclick="adicionarAoDisplay('Math.sinh(')">sinh</button>
+    <button class="button" onclick="adicionarAoDisplay('Math.cosh(')">cosh</button>
+    <button class="button" onclick="adicionarAoDisplay('Math.tanh(')">tanh</button>
+    <br>
+
+    <button class="button" onclick="adicionarAoDisplay('Math.sin(')">sin</button>
+    <button class="button" onclick="adicionarAoDisplay('Math.cos(')">cos</button>
+    <button class="button" onclick="adicionarAoDisplay('Math.tan(')">tan</button>
+    <button class="button" onclick="calcularFatorial()">x!</button>
+    <br>
+
+    <button class="button" onclick="adicionarAoDisplay('(')">(</button>
+    <button class="button" onclick="adicionarAoDisplay(')')">)</button> 
+    <button class="button"onclick="limparUltimoCaractere()">←</button>
+    <button class="button" onclick="limparDisplay()">C</button>
+    <br>
+
+    <button class="button" onclick="adicionarAoDisplay('%')">%</button>  
+    <button class="button" onclick="adicionarAoDisplay('Math.sqrt(')">√</button>
+    <button class="button" onclick="adicionarAoDisplay('**')">x²</button>
+    <button class="button" onclick="adicionarAoDisplay('/')">/</button>
+    <br>
+
+    <button class="button" onclick="adicionarAoDisplay('7')">7</button>
+    <button class="button" onclick="adicionarAoDisplay('8')">8</button>
+    <button class="button" onclick="adicionarAoDisplay('9')">9</button>
+    <button class="button" onclick="adicionarAoDisplay('*')">*</button>
+    <br>
+
+    <button class="button" onclick="adicionarAoDisplay('4')">4</button>
+    <button class="button" onclick="adicionarAoDisplay('5')">5</button>
+    <button class="button" onclick="adicionarAoDisplay('6')">6</button>
+    <button class="button" onclick="adicionarAoDisplay('-')">-</button>
+    <br>
+
+    <button class="button" onclick="adicionarAoDisplay('1')">1</button>
+    <button class="button" onclick="adicionarAoDisplay('2')">2</button>
+    <button class="button" onclick="adicionarAoDisplay('3')">3</button>
+    <button class="button" onclick="adicionarAoDisplay('+')">+</button>
+    <br>
+
+    <button class="button">:)</button>
+    <button class="button" onclick="adicionarAoDisplay('0')">0</button>
+    <button class="button" onclick="adicionarAoDisplay('.')">.</button>
+    <button class="button" onclick="calcularExpressao()">=</button>
+    <br>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
